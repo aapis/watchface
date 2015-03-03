@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Style Testing</title>
+    <style>
+
+    </style>
+ 
+    <script src="canvas/watchface.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function(){
+        var res = {
+              el: document.querySelector("#colour-wonderful"), 
+              context: document.querySelector("#colour-wonderful").getContext("2d"),
+              height: 290,
+              width: 320,
+              style: "circle",
+              type: "analog",
+            },
+        WF = new WatchFace(res);
+      });
+    </script>
+  </head>
+ 
+  <body>
+      <canvas id="colour-wonderful" height="350" width="350"></canvas>
+  </body>
+</html>
